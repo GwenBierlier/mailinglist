@@ -49,8 +49,8 @@
 			if($preparedStatement->execute()){
 
 	// Messages automatiques
-	$message = '<p>Bonjour, veuillez <a href="localhost:8888/examen/confirm.php?email='.$email.'">confirmer votre adresse mail</a>.' ;
-	$messagetxt = 'Bonjour, confirmez votre adresse mail en vous rendant à cette adresse : localhost:8888/examen/confirm.php?email='.$email.'">' ;
+	$message = '<p>Bonjour, veuillez <a href="http://gwenbierlier.com/php/mailinglist/confirm.php?email='.$email.'">confirmer votre adresse mail</a>.' ;
+	$messagetxt = 'Bonjour, confirmez votre adresse mail en vous rendant à cette adresse : http://gwenbierlier.com/php/mailinglist/confirm.php?email='.$email.'">' ;
 
 				sendConfirm($email, "The Mailinglist Project - Confirmer votre adresse mail.", $message, $messagetxt);
 				$feedback['success'] = "Merci de votre inscription ! Veuillez confirmer votre adresse au plus vite dans le mail que nous venons de vous envoyer. 👍";
